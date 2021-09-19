@@ -26,9 +26,13 @@ Go to [http://localhost:8080](http://localhost:8080)
 ## Running with Docker
 
 ```shell
+$ cp docker-compose.yml{.sample,}
+$ docker-compose run --rm web yarn install
 $ docker-compose build
 $ docker-compose up web
 ```
+
+Go to [http://localhost:8080](http://localhost:8080)
 
 ## Building production bundle
 
@@ -36,5 +40,3 @@ $ docker-compose up web
 $ yarn install
 $ yarn build
 ```
-
-Go to [http://localhost:8080](http://localhost:8080)
